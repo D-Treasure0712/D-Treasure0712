@@ -1,6 +1,7 @@
-# SVG-Animation
-## example
 <img alt="SNQ-2001" src="header.svg" width="98.2%" height="100%">
+
+# 💫 About Me:
+Hello! I'm a Master's student maj
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=D-Treasure0712&theme=2077)
 
