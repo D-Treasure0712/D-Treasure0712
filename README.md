@@ -21,16 +21,18 @@ I want to be a world Treasure.
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=D-Treasure0712&theme=2077)
+# 📊 GitHub Stats:
+<img alt="github Profile Summary Cards" width="98.3%" align=center src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=D-Treasure0712&theme=dracula" /><br/>
+<img alt="github Profile Summary Cards" width="98.3%" align=center src="https://github-readme-streak-stats.herokuapp.com/?user=D-Treasure0712&theme=dracula&hide_border=false" /><br/>
+<img alt="Top Langs" width="44.5%" src="https://github-readme-stats-vercel-wea9.vercel.app/api/top-langs/?username=D-Treasure0712&layout=compact&show_icons=true&theme=dracula" />
+<img alt="github stats" width="53.3%" src="https://github-readme-stats-vercel-wea9.vercel.app/api?username=D-Treasure0712&theme=dracula&show_icons=ture&count_private=true" />
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=D-Treasure0712&theme=onedark)](https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=tokyonight)
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=D-Treasure0712&theme=dracula&no-frame=false&no-bg=false&margin-w=4)
 
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=D-Treasure0712&limit=10&theme=dracula&combine_all_yearly_contributions=true&hide=B)
 
+---
 
-<img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=D-Treasure0712&layout=compact&count_private=true&show_icons=true&theme=tokyonight" />
-
-<img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=D-Treasure0712&count_private=true&show_icons=true&show_icons=true&theme=tokyonight" />
-
-
-
-[![github-chart](https://github-chart.vercel.app/api?user=D-Treasure0712)](https://github.com/D-Treasure0712/github-chart)
+[![](https://visitcount.itsvg.in/api?id=D-Treasure0712&icon=0&color=0)](https://visitcount.itsvg.in)
