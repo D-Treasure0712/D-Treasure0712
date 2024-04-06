@@ -1,7 +1,11 @@
 <img alt="SNQ-2001" src="header.svg" width="98.2%" height="100%">
 
 # 💫 About Me:
-Hello! I'm a Master's student maj
+Hello! I'm a master's student majoring information engineering. 
+
+Currently, I'm doing some research on the bioinformatics in one of my classes.
+
+I want to be a world Treasure.
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=D-Treasure0712&theme=2077)
 
