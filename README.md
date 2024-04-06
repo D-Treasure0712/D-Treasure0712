@@ -28,7 +28,7 @@ Here are some ideas to get you started:
 
 <img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=D-Treasure0712&count_private=true&show_icons=true&show_icons=true&theme=tokyonight" />
 
-[![Twitter](https://img.shields.io/badge/--FFFFFF?style=social&logo=twitter&label=Follow%20{D_Treasure0712})](https://twitter.com/{D_Treasure0712})
+[![Twitter](https://img.shields.io/badge/--FFFFFF?style=social&logo=twitter&label=Follow%20D_Treasure0712)](https://twitter.com/D_Treasure0712)
 
 
 [![Github](https://img.shields.io/badge/--FFFFFF?style=social&logo=github&label=Follow%20D-Treasure0712)](https://github.com/D-Treasure0712)
