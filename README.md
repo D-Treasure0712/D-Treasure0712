@@ -9,8 +9,6 @@ I want to be a world Treasure.
 
 # 🌐 Socials:
 
-[![Twitter](https://img.shields.io/badge/--FFFFFF?style=social&logo=twitter&label=Follow%20D_Treasure0712)](https://twitter.com/D_Treasure0712)
-
 [![Twitter Follow](https://img.shields.io/twitter/follow/D_Treasure0712?style=social)](https://twitter.com/D_Treasure0712)
 
 [![Github](https://img.shields.io/badge/--FFFFFF?style=social&logo=github&label=Follow%20D-Treasure0712)](https://github.com/D-Treasure0712)
