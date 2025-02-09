@@ -10,15 +10,11 @@
 
 [Qiita](https://qiita.com/D_Treasure0712)
 
-[instagram]
-(https://www.instagram.com/d_treasure0712?igsh=MWwwNWsxcWh1ejJ2cA%3D%3D&utm_source=qr)
+[instagram](https://www.instagram.com/d_treasure0712?igsh=MWwwNWsxcWh1ejJ2cA%3D%3D&utm_source=qr)
 
 # 📊 GitHub Stats:
 
 <img alt="github stats" width="100%" src="https://github-readme-stats-vercel-wea9.vercel.app/api?username=D-Treasure0712&theme=dracula&show_icons=ture&count_private=true" />
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=D-Treasure0712&theme=dracula&no-frame=false&no-bg=false&margin-w=4)
 
 
 ---
