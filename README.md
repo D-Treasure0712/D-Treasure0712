@@ -22,7 +22,15 @@
 
 
 # 💫 About Me:
-'01
+A student engineer from Japan.
+
+I write code. Sometimes. I like web development and AI.
+
+I like competition, but I can't get along with bugs. I'm bad at debugging, but I'm even worse at giving up.
+
+I build stuff thinking "it'll work out somehow." Lots of failures, but that's part of the fun.
+
+Also on Zenn and X if you're interested. Probably won't find anything useful there though.
 
 # 🌐 Socials:
 
