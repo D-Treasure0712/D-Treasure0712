@@ -1,0 +1,94 @@
+<svg class="My_Page" fill="none" viewBox="0 0 900 120" width="900" height="120" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                * { box-sizing: border-box; }
+
+                @-webkit-keyframes typing {
+                    from { width: 0; }
+                    to   { width: 13.5em; }
+                }
+                @-webkit-keyframes blink-caret {
+                    50% { border-color: transparent; }
+                }
+                @-webkit-keyframes float {
+                    0%, 100% { transform: translateY(0); }
+                    50%      { transform: translateY(-3px); }
+                }
+
+                .container {
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(135deg, #0d1117 0%, #161b22 55%, #0a0f1a 100%);
+                    border: 1px solid #21262d;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    font-family: Consolas, Monaco, "Courier New", monospace;
+                }
+
+                .bar {
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 14px;
+                    background: rgba(255, 255, 255, 0.03);
+                    border-bottom: 1px solid #21262d;
+                }
+                .dot {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    margin-right: 8px;
+                }
+                .red    { background: #ff5f56; }
+                .yellow { background: #ffbd2e; }
+                .green  { background: #27c93f; }
+                .path {
+                    margin-left: 12px;
+                    color: #6e7681;
+                    font-size: 12px;
+                }
+
+                .body {
+                    display: flex;
+                    align-items: center;
+                    height: 90px;
+                    padding: 0 22px;
+                }
+                .prompt {
+                    color: #56d364;
+                    font-size: 26px;
+                    font-weight: bold;
+                    margin-right: 12px;
+                    -webkit-animation: float 3s ease-in-out infinite;
+                }
+                h1 {
+                    font: bold 26px Consolas, Monaco, monospace;
+                    border-right: .12em solid #56d364;
+                    width: 13.5em;
+                    margin: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    -webkit-animation: typing 2.6s steps(28, end), blink-caret .65s step-end infinite alternate;
+                    background: linear-gradient(90deg, #56d364, #2dd4bf, #38bdf8);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-shadow: 0 0 18px rgba(45, 212, 191, 0.25);
+                }
+            </style>
+            <div class="container">
+                <div class="bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="path">~/D-Treasure0712 — zsh</span>
+                </div>
+                <div class="body">
+                    <span class="prompt">&#10095;</span>
+                    <h1>Welcome to my profile</h1>
+                </div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
