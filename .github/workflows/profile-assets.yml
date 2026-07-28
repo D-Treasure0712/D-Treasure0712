@@ -1,0 +1,98 @@
+name: Build Profile Assets
+
+on:
+  # Refresh automatically every 12 hours
+  schedule:
+    - cron: "0 */12 * * *"
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+  # Run on every push to the default branch
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+# Everything below force-pushes the `output` branch, so never run two at once.
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate snake animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=#2dd4bf&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#2dd4bf&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
+
+      - name: Snapshot GitHub stat cards
+        env:
+          USER_NAME: ${{ github.repository_owner }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -uo pipefail
+          mkdir -p dist
+
+          # The public streak / activity-graph instances answer 200 OK with an
+          # "error card" SVG whenever the GitHub API rejects their request.
+          # Hotlinking them from the README means GitHub's image proxy happily
+          # caches that error card for hours. So snapshot the cards here, reject
+          # the error variants, and keep the last good copy when a fetch breaks.
+          is_error_card() {
+            grep -qiE 'Failed to retrieve|likely a GitHub API issue|Something went wrong|try again later|Bad credentials|rate limit|Maximum number' "$1"
+          }
+
+          snapshot() {
+            name="$1"
+            url="$2"
+
+            for attempt in 1 2 3; do
+              if curl -sSfL --max-time 45 -o "dist/$name.tmp" "$url" \
+                 && grep -qi '<svg' "dist/$name.tmp" \
+                 && ! is_error_card "dist/$name.tmp"; then
+                mv "dist/$name.tmp" "dist/$name"
+                echo "::notice::snapshotted $name"
+                return 0
+              fi
+              echo "::warning::attempt $attempt for $name did not return a usable card"
+              sleep $((attempt * 10))
+            done
+
+            # Fall back to whatever is already published on the output branch,
+            # so a bad upstream day never replaces a good card with a broken one.
+            if curl -sSfL --max-time 45 -H 'Cache-Control: no-cache' \
+                 -o "dist/$name" "https://raw.githubusercontent.com/$REPO/output/$name"; then
+              echo "::warning::kept the previously published $name"
+              return 0
+            fi
+
+            echo "::error::could not produce $name"
+            return 1
+          }
+
+          rc=0
+
+          snapshot github-streak.svg \
+            "https://streak-stats.demolab.com/?user=$USER_NAME&theme=react&hide_border=true&background=0D1117&ring=2DD4BF&fire=2DD4BF&currStreakLabel=2DD4BF" || rc=1
+
+          snapshot github-activity-graph.svg \
+            "https://github-readme-activity-graph.vercel.app/graph?username=$USER_NAME&theme=react-dark&hide_border=true&area=true&bg_color=0D1117&color=2DD4BF&line=2DD4BF&point=FFFFFF" || rc=1
+
+          rm -f dist/*.tmp
+          # Bail out before publishing rather than pushing an incomplete set.
+          exit $rc
+
+      - name: Push assets to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
